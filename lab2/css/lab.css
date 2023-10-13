@@ -1,9 +1,46 @@
 /* Here we can set styles for this lab page that we don't want to effect others pages */
 
 /* the period in a CSS selector selects an element by class, e.g., class="minor-section" */
+body {
+  color: #B1BF73;
+  font-size: 15px;
+  background-color: #3C1B43;
+}
+
+h1 {
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-weight: 75;
+  text-align: center;
+}
+
+h2 {
+  font-style: italic;
+}
+
+p {
+  color:#CCE28D;
+  text-align: justify;
+  text-indent: 5%;
+}
+
+a {
+  color: #B1BF73;
+}
+
+#planet {
+  max-width: 200px;
+  max-height: auto;
+  border: solid 1 px black;
+}
+
+#content{
+  background-color: #501537;
+  border: solid 1px black;
+}
+
 .minor-section {
     padding: 10px;
     margin-bottom: 10px;
-    border: solid 1px #888;
-    background-color: #DDD8C4;
+    border: solid 1px black;
+    background-color: #922D50;
   }
