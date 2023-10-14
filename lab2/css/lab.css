@@ -30,17 +30,21 @@ a {
 #planet {
   max-width: 200px;
   max-height: auto;
-  border: solid 1 px black;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  /*Image centering help from how to center images w3schools.com*/
 }
 
 #content{
   background-color: #501537;
-  border: solid 1px black;
+  border: solid 2px black;
+  border-radius: 10px;
 }
 
 .minor-section {
     padding: 10px;
     margin-bottom: 10px;
-    border: solid 1px black;
+    border: dotted 4px black;
     background-color: #922D50;
   }
