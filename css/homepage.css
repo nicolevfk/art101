@@ -5,7 +5,43 @@
   max-width: 500px;
 }
 
-.crane-photo {
+#crane-photo {
+  border: solid 3px #8C2155;
+  border-radius: 10px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 200px;
+  max-height: auto;
+}
+
+p, ol {
+  color: #5C1A1B;
+}
+
+h2 {
+  color: #8C2155;
+}
+
+h1 {
+  color: #E1CE7A;
+  text-align: center;
+  text-shadow: -2px -2px #8C2155;
   margin: 10px;
-  max-width: 500px;
+}
+
+a {
+  margin: 1000px;
+}
+
+#content {
+  background-color: #1AC8ED;
+}
+
+.minor-section {
+  background-color: #AED4E6;
+}
+
+h2, p, ol {
+  margin: 20px;
 }
