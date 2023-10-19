@@ -25,7 +25,7 @@
   max-height: auto;
 }
 
-p, ol {
+p, ul {
   color: #5C1A1B;
 }
 
@@ -49,6 +49,6 @@ h1 {
   background-color: #AED4E6;
 }
 
-h2, p, ol {
+h2, p, ul {
   margin: 20px;
 }
