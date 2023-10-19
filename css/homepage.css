@@ -5,6 +5,16 @@
   max-width: 500px;
 }
 
+#my-portrait {
+  border: solid 3px #8C2155;
+  border-radius: 10px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 200px;
+  max-height: auto;
+}
+
 #crane-photo {
   border: solid 3px #8C2155;
   border-radius: 10px;
@@ -30,9 +40,6 @@ h1 {
   margin: 10px;
 }
 
-a {
-  margin: 1000px;
-}
 
 #content {
   background-color: #1AC8ED;
