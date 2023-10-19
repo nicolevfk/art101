@@ -5,7 +5,7 @@
     padding: 10px;
     margin-bottom: 10px;
     border: solid 1px #888;
-    background-color: #FFB2E6;
+    background-color: #DDC9B4;
   }
 
 #links-image {
@@ -15,7 +15,12 @@
     max-height: 500px;
   }
 
-  #content {
-    background-color: #D972FF;
-    color: #8447FF;
+#content, a {
+    background-color: #C17C74;
+    color: #2A3D45;
+  }
+
+p {
+    color: #736659;
+    line-height: 120%;
   }
