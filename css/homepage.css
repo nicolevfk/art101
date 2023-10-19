@@ -5,7 +5,7 @@
   max-width: 500px;
 }
 
-#my-portrait {
+.my-portrait {
   border: solid 3px #8C2155;
   border-radius: 10px;
   display: block;
