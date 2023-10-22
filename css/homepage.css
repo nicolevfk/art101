@@ -1,17 +1,28 @@
 /* this css file will only style the homepage of our site */
+.text-box {
+  width: 75%;
+  flex-basis: 75%;
+}
 
-#my-portrait {
-  border: solid 3px #8C2155;
-  border-radius: 10px;
-  max-width: 200px;
-  max-height: auto;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+.photo-box {
+  width: 25%;
+  flex-basis: 25%;
+}
+
+.photo-box img {
+  width: 100%;
+}
+
+.side-by-side {
+  display:flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 p, ul {
   color: #5C1A1B;
+  list-style-type: circle;
 }
 
 h2 {

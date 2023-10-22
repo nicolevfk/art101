@@ -2,8 +2,70 @@
 
 /* the period in a CSS selector selects an element by class, e.g., class="minor-section" */
 .minor-section {
-    padding: 10px;
-    margin-bottom: 10px;
-    border: solid 1px #888;
-    background-color: #DDD8C4;
+    padding: 15px;
+    margin-bottom: 15px;
+    border: dotted 3px #D5F2E3;
+    background-color: #73BA9B;
   }
+
+#content {
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: #F46691;
+  border: solid 3px #D5F2E3;
+}
+
+h2, h3 {
+  color: #003E1F;
+  padding-left: 35px;
+}
+
+h1 {
+  color: #003E1F;
+  text-align: center;
+}
+
+p {
+  color: #01110A;
+}
+
+.pseudocode-box {
+  width: 70%;
+  flex-basis: 70%;
+}
+
+.pseudocode-box img {
+  width: 80%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#centered {
+  text-align: center;
+  padding: 0px;
+}
+
+.gif-box {
+  width: 30%;
+  flex-basis: 30%;
+}
+
+ol ol {
+  list-style-type: lower-roman;
+}
+
+.gif-box img {
+  width: 100%;
+  border: dotted 5px #F46691;
+  border-radius: 5px;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.side-by-side {
+  display:flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
