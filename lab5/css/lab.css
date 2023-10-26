@@ -4,6 +4,35 @@
 .minor-section {
     padding: 10px;
     margin-bottom: 10px;
-    border: solid 1px #888;
-    background-color: #DDD8C4;
+    border: dotted 3px #90708C;
+    background-color: #ACE4AA;
+    border-radius: 5px;
   }
+
+#car-pic {
+  width: 40%;
+}
+
+#content {
+  background-color: #E1CDB5;
+  border: solid 3px #90708C;
+  border-radius: 5px;
+}
+
+.right {
+  display:block;
+  text-align: right;
+}
+
+p {
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+h1 {
+  text-align: center;
+}
+
+h1, h2 {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
