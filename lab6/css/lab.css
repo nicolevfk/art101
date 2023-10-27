@@ -4,6 +4,22 @@
 .minor-section {
     padding: 10px;
     margin-bottom: 10px;
-    border: solid 1px #888;
-    background-color: #DDD8C4;
+    border: solid 3px #4D2D52;
+    background-color: #F08CAE;
+    color:#1D1A31;
   }
+
+#content {
+  border: dotted 5px #4D2D52;
+  background-color: #9A4C95;
+  color: #1D1A31;
+}
+
+a {
+  color: #F08CAE;
+}
+
+.right {
+  display:block;
+  text-align: right;
+}

@@ -1,4 +1,4 @@
-// index.js - purpose and description here
+// index.js - Describing a car using variables
 // Author: Nicole Van Fleet Kingery
 // Date: 10/24/2023
 
