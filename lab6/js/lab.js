@@ -22,3 +22,4 @@ document.writeln("My forms of transport include: ", myTransport, "</br>");
 // To Write Object into Document
 document.writeln("My dad's car: <pre>", 
     JSON.stringify(myMainRide, null, '\t'), "</pre>");
+    

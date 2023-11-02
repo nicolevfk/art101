@@ -1,0 +1,31 @@
+
+.minor-section {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: solid 3px #EDE7E3;
+    background-color: #82C0CC;
+    border-radius: 15px;
+  }
+
+#content {
+  border: dotted 5px #EDE7E3;
+  background-color: #469AAF;
+  color: #1D1A31;
+}
+
+p {
+    color: #16697A;
+}
+
+a, h1, h2, h3 {
+  color: #FFA62B;
+}
+
+.right {
+  display:block;
+  text-align: right;
+}
+
+#car-pic {
+  width: 40%;
+}
