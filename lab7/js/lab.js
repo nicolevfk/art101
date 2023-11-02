@@ -1,4 +1,4 @@
-// index.js - Functions
+// index.js - Sorting user input alphabetically
 // Author: Nicole Van Fleet Kingery
 // Date: 10/31/23
 
@@ -9,13 +9,16 @@ function alphabetizeName(userName) {
     return userName.toLowerCase().split("").sort().join("")
 }
 
-// uses code from stackoverflow: https://stackoverflow.com/questions/8996963/how-to-perform-case-insensitive-sorting-array-of-string-in-javascript
+    // keeps the capitals of each 
+    // uses code from stackoverflow: https://stackoverflow.com/questions/8996963/how-to-perform-case-insensitive-sorting-array-of-string-in-javascript
 function caseInsensitiveSort(userName) {
     return userName.split('').sort( function (a, b) {
         return a.toLowerCase().localeCompare(b.toLowerCase());
     }).join('');
 }
 
+
+    // sorts each part of name, keeping spaces
 function individualNameSort(userName) {
     userName = userName.split(' ');
     var newName = '';
@@ -26,8 +29,17 @@ function individualNameSort(userName) {
     return newName
 }
 
+
+    // sorts and capitalizes the first letter of each name
+function newUserName(userName) {
+    var newName = individualNameSort(userName);
+    return newName.toLowerCase().replace( /\b./g, function(a) { return a.toUpperCase(); });
+}
+
 // Use functions
-var named = window.prompt("Please insert your name so I can sort it: ")
-document.writeln("Here is your sorted name: ", alphabetizeName(named), "</br>");
+var named = window.prompt("Please insert your name so I can rename you: ")
+document.writeln("So your name is ", named, "? </br>")
+document.writeln("Well, here is your sorted name: ", alphabetizeName(named), "</br>");
 document.writeln("Here is your sorted name without converting to lowercase: ", caseInsensitiveSort(named), "</br>")
-document.writeln("And just for fun, here's each part of your name sorted individually: ", individualNameSort(named));
+document.writeln("Here is each part of your name sorted individually: ", individualNameSort(named), "</br>");
+document.writeln("And here is that capitalized correctly, and your new name: ", newUserName(named));
