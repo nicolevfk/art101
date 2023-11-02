@@ -19,6 +19,7 @@ p {
 
 a, h1, h2, h3 {
   color: #FFA62B;
+  text-shadow: -1px -1px #469AAF;
 }
 
 .right {
