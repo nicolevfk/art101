@@ -3,6 +3,7 @@
 // Date: 10/31/23
 
 // Variables
+var named = window.prompt("Please insert your name so I can rename you: ")
 
 // Functions
 function alphabetizeName(userName) {
@@ -13,7 +14,7 @@ function alphabetizeName(userName) {
     // uses code from stackoverflow: https://stackoverflow.com/questions/8996963/how-to-perform-case-insensitive-sorting-array-of-string-in-javascript
 function caseInsensitiveSort(userName) {
     return userName.split('').sort( function (a, b) {
-        return a.toLowerCase().localeCompare(b.toLowerCase());
+        return a.localeCompare(b);
     }).join('');
 }
 
@@ -29,15 +30,14 @@ function individualNameSort(userName) {
     return newName
 }
 
-
     // sorts and capitalizes the first letter of each name
+    // borrows code from stackoverflow: https://stackoverflow.com/questions/2332811/capitalize-words-in-string
 function newUserName(userName) {
     var newName = individualNameSort(userName);
     return newName.toLowerCase().replace( /\b./g, function(a) { return a.toUpperCase(); });
 }
 
 // Use functions
-var named = window.prompt("Please insert your name so I can rename you: ")
 document.writeln("So your name is ", named, "? </br>")
 document.writeln("Well, here is your sorted name: ", alphabetizeName(named), "</br>");
 document.writeln("Here is your sorted name without converting to lowercase: ", caseInsensitiveSort(named), "</br>")

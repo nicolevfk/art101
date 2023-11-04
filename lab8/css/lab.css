@@ -1,0 +1,27 @@
+
+.minor-section {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: dotted 5px #ffb4a2;
+    background-color: #ffcdb2;
+    border-radius: 15px;
+}
+
+#content {
+    border: solid 3px #b5838d;
+    background-color: #e5989b;
+    border-radius: 15px;
+}
+
+main {
+    color: #6d6875;
+}
+
+h1, h2, h3 {
+    text-shadow: -1px -1px rgb(71, 71, 71);
+}
+
+.right {
+  display:block;
+  text-align: right;
+}
