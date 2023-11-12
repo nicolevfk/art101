@@ -1,0 +1,22 @@
+.minor-section {
+    border: solid 3px rgb(218, 74, 199);
+    background-color: rgb(70, 144, 228);
+    padding: 15px;
+}
+
+#content {
+    border: solid 3px rgb(218, 74, 199);
+    background-color: #c7e598;
+    border-radius: 15px;
+}
+
+.special {
+    background-color: rgb(80, 250, 148);
+    border: dotted 3px rgb(218, 74, 199);
+    color: rgb(192, 41, 41);
+    font-weight: bold;
+}
+
+h1 {
+    color: rgb(218, 74, 115);
+}
