@@ -1,0 +1,31 @@
+.text p {
+  display: inline-block;
+  max-width: 70%;
+  margin: 3px;
+  padding: 5px 10px;
+  border-radius: 15px;
+  background-color: darkgray;
+  color: white;
+  font-family: sans-serif;
+}
+
+.response p {
+  display: inline-block;
+  /*how to display inline-block on left found at 
+  https://stackoverflow.com/questions/38488069/how-can-i-move-display-inline-block-to-the-right#:~:text=use%20float%20right.%20This%20should%20work,for%20you%3A%20%3Cdiv%20style%3D%27display%3Ainline-block%3Bposition%3Arelative%3Bfloat%3Aright%3B%27%3E%20right%20%3C%2Fdiv%3E */
+  position: relative;
+  left: 100%;
+  transform: translateX(-100%); 
+  max-width: 70%;
+  margin: 3px;
+  padding: 5px 10px;
+  border-radius: 15px;
+  background-color: lightgreen;
+  color: white;
+  font-family: sans-serif;
+}
+
+.right {
+    display:block;
+    text-align: right;
+  }

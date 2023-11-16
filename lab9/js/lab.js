@@ -6,7 +6,7 @@
 $(".minor-section").append("<br><button class='toggle-css'>Make Special</button>");
 
 //make buttons do functions when clicked
-    // when clicking the "Make Special" button, the section should change css
+    // when clicking the "Make Special" button in one of the 3 sections, the section should change css
 $(".minor-section button").click( function() {
     ($(this).parent()).toggleClass("special");
 });

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Lab 10 - JavaScript for the Web</title>
+	<link rel="stylesheet" type="text/css" href="../css/site.css">
+    <link rel="stylesheet" type="text/css" href="css/lab.css">
+    <script src="js/lab.js" defer></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+</head>
+
+<body>
+    <main id="content">
+        <section>
+            <h1>Lab 10: JavaScript for the Web</h1>
+            <div class="minor-section">
+                <h2>Challenges</h2>
+                <p>Working with your partner, experiment with DOM manipulation.</p>
+            </div>
+            <div class="minor-section">
+                <h2>Problems</h2>
+                <p>The hardest part of this assignment was displaying text on the right in task X. In order 
+                    to switch between 2 different classes, I tried to use toggleClass, but couldn't figure 
+                    it out, so instead I used an if-else statement using a variable that switched between 
+                    true/false. Once that was done, I was still having trouble figuring out the CSS to display 
+                    and inline-block on the right. I tried using float, but that would make the next message
+                    appear in the same line which isn't what we wanted. In the end I looked it up and found 
+                    an answer that worked on StackOverflow using "transform: translateX(-100%)," to flip how
+                    everything was styled.
+                </p>
+            </div>
+            <div class="minor-section">
+                <h2>Results</h2>
+                <p>Click button to continue the conversation...</p>
+                <div id="output"></div>
+                <button id="make-convo">Say Something</button>
+            </div>
+        </section>
+        <nav id="links">
+            <a href="https://nicolevfk.github.io/art101/" target="_new"> << Back to Homepage</a>
+            <a href="https://nicolevfk.github.io/art101/lab10/js/lab.js" class="right" target="_new">To JavaScript Code >></a>
+        </nav>
+</body>
+</html>

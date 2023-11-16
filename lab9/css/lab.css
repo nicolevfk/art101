@@ -20,3 +20,8 @@
 h1 {
     color: rgb(218, 74, 115);
 }
+
+.right {
+    display:block;
+    text-align: right;
+  }
