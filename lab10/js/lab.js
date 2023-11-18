@@ -7,6 +7,7 @@
 // variable for call and response
 var response = false;
 
+// generate text from Lorem Ipsum (code taken from task 10 assignment)
 function generateRandomText() {
     const text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.";
     const min = 3;
