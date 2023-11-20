@@ -1,4 +1,62 @@
 .right {
-    display:block;
-    text-align: right;
-  }
+  display:block;
+  text-align: right;
+}
+
+body {
+  background-color: #38023B;
+  color: #38023B;
+}
+
+#content {
+  background-color: #A288E3;
+}
+
+.minor-section {
+  background-color: #CEFDFF;
+  border: solid 3px #CCFFCB;
+  border-radius: 15px;
+}
+
+.party {
+  animation: animated-background 3s 5;
+}
+
+.party #content {
+  background-color: black;
+  animation: animated-letters 3s 5, animated-borders 3s 5;
+}
+
+body.party div#output {
+  animation: no-border 3s 5;
+}
+
+.party div {
+  background-color: rgb(64, 59, 59);
+  animation: animated-borders 3s 5;
+}
+
+@keyframes animated-background {
+  0% {background-color: red;}
+  40% {background-color: lightgreen;}
+  75% {background-color: blue;}
+  100% {background-color: red;}
+}
+
+@keyframes animated-letters {
+  0% {color: red;}
+  40% {color: lightgreen;}
+  75% {color: blue;}
+  100% {color: red;}
+}
+
+@keyframes animated-borders {
+  0% {border: dotted 1px white;}
+  50% {border: dotted 10px lightyellow;}
+  100% {border: dotted 1px white;}
+}
+
+@keyframes no-borders {
+  from {border: none;}
+  to {border: none;}
+}

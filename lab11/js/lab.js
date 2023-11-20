@@ -12,7 +12,7 @@ var anagramed_item = "";
 function sortString(inputString) {
     // We have to convert our string to an array and back again to sort it
     return inputString.toLowerCase().split('').sort().join('');
-  }
+}
 
 // Sorts the characters of a string into an anagram.
 function anagram(inputString) {
@@ -24,14 +24,6 @@ function anagram(inputString) {
     return array.join('').toLowerCase().replace( /\b./g, function(a) { return a.toUpperCase(); });
 }
 
-// for lecture
-/*
-$("#working").click(function() {
-    var name = $("#input").val();
-    console.log("Returned: "+ name);
-});
-*/
-
 // click listener for sorting button
 $("#submit").click(function(){
     // get value of input field with val()
@@ -39,11 +31,9 @@ $("#submit").click(function(){
     // now let's sort it
     userNameSorted = sortString(userName);
     // append a new div to our output div
-    if(userNameSorted != sorted_item) {
+    if (userNameSorted != sorted_item && userName.length != 0) {
         $("#output").append('<p>' + userName + ' sorted is ' + userNameSorted + '</p>');
         sorted_item = userNameSorted;
-    } else {
-        console.log("you should write something new");
     }
 });
 
@@ -54,10 +44,32 @@ $("#submit2").click(function(){
     // now lets anagram it
     userNameAnagram = anagram(userName);
     // append a new div to our output div
-    if(userName != anagramed_item) {
+    if (userName != anagramed_item && userName.length != 0) {
         $("#output").append('<p>An anagram of ' + userName + ' is ' + userNameAnagram + '</p>');
         anagramed_item = userName;
-    } else if (userName = anagramed_item) {
+    } else if (userName.length != 0) {
         $("#output").append('<p>Another anagram of ' + userName + ' is ' + userNameAnagram + '</p>');
+    }
+});
+
+// party button
+// when button is clicked, class party gets added which in turn causes all the CSS to change
+// runs party for a time period before stopping
+// during time period, button text is replaced with countdown
+$("#party-mode").click(function() {
+    if (!$("body").hasClass("party")) {
+        // runs animation and stops after a certain amount of time
+        $("#party-mode").html("Ends in 15");
+        var sec = 14;
+        $("body").addClass("party");
+        var timer = setInterval(function(){
+            $("#party-mode").html("Ends in " + sec);
+            sec--;
+            if (sec < 0) {
+                clearInterval(timer);
+                $("body").removeClass("party");
+                $("#party-mode").html("Let's Party");
+            }
+        }, 1000);   
     }
 });
