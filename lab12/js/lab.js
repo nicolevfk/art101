@@ -6,10 +6,7 @@
 
 function sortingHat(str) {
     // simplified code for task X
-    var mod = ["<h3>The Sorting Hat has sorted you into Griffindor</h3> <p>A Griffindor is Courageous, Chivalrous, and Daring.</p>", 
-    "<h3>The Sorting Hat has sorted you into Slytherin</h3> <p>A Slytherin is Ambitious, Resourceful, and Cunning.</p>", 
-    "<h3>The Sorting Hat has sorted you into Hufflepuff</h3> <p>A Hufflepuff is Loyal, Patient, and Hard Working.</p>", 
-    "<h3>The Sorting Hat has sorted you into Ravenclaw</h3> <p>A Ravenclaw is Wise, Intelligent, and Creative.</p>"]
+    var mod = ["Griffindor", "Slytherin", "Hufflepuff", "Ravenclaw"]
     return mod[(str.length % 4)]
     /* OG code
     var length  = str.length;
@@ -28,5 +25,19 @@ function sortingHat(str) {
 $("#button").click(function() {
     const name = $("#input").val();
     var house = sortingHat(name);
-    $("#output").html(house);
+    $("#results").removeClass()
+    $("#output").html("<h3>The sorting house has sorted you into " + house);
+    if (house == "Griffindor") {
+        $("#output").append("<p>A true Griffindor is Courageous, Chivalrous, and Daring.</p>");
+        $("section").removeClass().addClass("griffindor");
+    } else if (house == "Slytherin") {
+        $("#output").append("<p>A true Slytherin is Ambitious, Resourceful, and Cunning.</p>");
+        $("section").removeClass().addClass("slytherin");
+    } else if (house == "Hufflepuff") {
+        $("#output").append("<p>A true Hufflepuff is Loyal, Patient, and Hard Working.</p>");
+        $("section").removeClass().addClass("hufflepuff");
+    } else if (house == "Ravenclaw") {
+        $("#output").append("<p>A true Ravenclaw is Wise, Intelligent, and Creative.</p>");
+        $("section").removeClass().addClass("ravenclaw");
+    };
 });
