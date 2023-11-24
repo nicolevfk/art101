@@ -1,0 +1,10 @@
+.right {
+    display:block;
+    text-align: right;
+}
+
+.clms {
+    -webkit-column-width: 200px;
+    -moz-column-width: 200px;
+    column-width: 200px;
+}

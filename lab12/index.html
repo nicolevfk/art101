@@ -18,7 +18,17 @@
             </div>
             <div class="minor-section">
                 <h2>Problems</h2>
-                <p> </p>
+                <p>In addition to task X, I also ended up using addClass() to change the CSS of the box the
+                    results are in. To do this I added an id = "results" to the div in order to select it. 
+                    I tried to add the house class to the results div at first, but I had trouble removing the class
+                    in order to add another. To fix this I added the house class to the section insetead, and 
+                    then when I want to remove the class I just put $("section").removeClass() and it removes any classes on
+                    section. I also wanted the new class not to affect the previous classes, but for some reason
+                    it alwas removed any formatting on the div that I didn't want to be removed. Like I would just
+                    change the border and background-color, but it would remove the padding and font formatting that
+                    I wanted to keep. Don't know if there's a reason for that or a way to fix it, but I ended up just 
+                    adding the same CSS to the added classes so that it wouldn't change. 
+                </p>
             </div>
             <div class="minor-section" id="results">
                 <h2>Results</h2>
