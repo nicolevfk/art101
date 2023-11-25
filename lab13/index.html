@@ -14,20 +14,47 @@
             <h1>Lab 13: Loops</h1>
             <div class="minor-section">
                 <h2>Challenges</h2>
-                <p> </p>
+                <p>Experiment with loops to create a system for finding factors of numbers. </p>
             </div>
             <div class="minor-section">
                 <h2>Problems</h2>
-                <p> </p>
+                <p>I had a little trouble figuring out how I would set up a function to get the input from all
+                    the input boxes at the same time and how to store them to use in the FizzBuzz function. I
+                    looked at Wes' code to see how he designed this part and ended up making my code very similar.
+                    I also wanted to make it so that I could change the inputs and it would update when I hit the 
+                    button again, but quickly figured out that because I was using append to add onto the input,
+                    instead of changing everything, it was just adding the new output onto the end of the old output.
+                    To fix this I made it so during the first for loop (when n=0) the output is overwritten with .html(). </p>
             </div>
             <div class="minor-section">
                 <h2>Results</h2>
-                <p> </p>
-                <input type="number"  id="max" placeholder="Max Number"> </br>
-                <input type="number"  id="num1" placeholder="Multiple"> <input type="text"  id="w1" placeholder="Word"> </br>
-                <input type="number"  id="num2" placeholder="Multiple"> <input type="text"  id="w2" placeholder="Word"> </br>
-                <input type="number"  id="num3" placeholder="Multiple"> <input type="text"  id="w3" placeholder="Word"> </br>
-                <input type="number"  id="num4" placeholder="Multiple"> <input type="text"  id="w4" placeholder="Word"> </br>
+                <p>Input the largest number you want to find the factors of, the different factors you want 
+                    to search for and the text you want to print if they're found.
+                </p>
+                <input type="number"  id="max" min= "20" max="200" placeholder="Max Number" class="center"> </br>
+                <table>
+                    <tr>
+                        <th>Choose a factor...</th>
+                        <th>Choose what it prints...</th>
+                    </tr>
+                    <tr>
+                        <td><input type="number"  id="num1" min="0" max="20" placeholder="Factor"></td>
+                        <td><input type="text"  id="w1" placeholder="Prints..."></td>
+                    </tr>
+                    <tr>
+                        <td><input type="number"  id="num2" min="0" max="20" placeholder="Factor"></td>
+                        <td><input type="text"  id="w2" placeholder="Prints..."></td>
+                    </tr>
+                    <tr>
+                        <td><input type="number"  id="num3" min="0" max="20" placeholder="Factor"></td>
+                        <td><input type="text"  id="w3" placeholder="Prints..."></td>
+                    </tr>
+                    <tr>
+                        <td><input type="number"  id="num4" min="0" max="20" placeholder="Factor"></td>
+                        <td><input type="text"  id="w4" placeholder="Prints..."></td>
+                    </tr>
+                </table>
+                <button id="button">Enter</button> 
                 <div id="output" class="clms"></div>
             </div>
         </section>

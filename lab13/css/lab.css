@@ -8,3 +8,51 @@
     -moz-column-width: 200px;
     column-width: 200px;
 }
+
+button {
+    background-color: #4CAF50; /* Green F374AE pink*/
+    border: none;
+    border-radius: 5px;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    font-size: 16px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+table {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+input {
+    background-color: #D8CFAF;
+    border-radius: 3px;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100px;
+}
+
+#content {
+    background-color: #ED9390;
+}
+
+.minor-section {
+    background-color: #E6B89C;
+}
+
+body {
+    color: #32533D;
+    background-color: #32533D;
+}
+
+h1, h2, h3 {
+    color: rgb(11, 35, 3);
+}
