@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Lab 14 - Debugging Tools & Strategies</title>
+	<link rel="stylesheet" type="text/css" href="../css/site.css">
+    <link rel="stylesheet" type="text/css" href="css/lab.css">
+    <script src="js/lab.js" defer></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+</head>
+
+<body>
+    <main id="content">
+        <section>
+            <h1>Lab 14: Debugging Tools & Strategies</h1>
+            <div class="minor-section">
+                <h2>Challenges</h2>
+                <p>Debug any code from previous labs that didn't work as expected. </p>
+            </div>
+            <div class="minor-section">
+                <h2>Problems</h2>
+                <p>It was pretty to correct what I had problems with in the previous labs. The biggest problem I
+                    encountered while debugging was in lab 8 when I was trying to figure out how to start/end the string
+                    without a comma. I ended up making it so the first loop of the for loop set the string variable
+                    as the first item in the list, and then from there each loop adds a comma, space, and then the
+                    following item on the list. This way, the list doesn't have an unwanted comma on either side of 
+                    the list. 
+                </p>
+            </div>
+            <div class="minor-section">
+                <h2>Results</h2>
+                <p>The labs I worked to fix were labs 8 and 12 as explained below in the Debugging section. </p>
+            </div>
+            <div class="minor-section">
+                <h2>Debugging</h2>
+                <div class="side-by-side">
+					<div class="left-side">
+                        <b>Before: </b>
+						<img id="lab8-b" src="img/lab8-before.png"/>
+					</div>
+					<div class="right-side">
+                        <b>After: </b>
+						<img id="lab8-a" src="img/lab8-after.png"/>	
+					</div>
+                    <p>In lab 8, all the values were printed without spaces inbetween which made it difficult
+                        to read, so I used a for loop to make a function that would space the lists before
+                        outputting them. 
+                    </p> </br> </br>
+                    <div class="left-side">
+                        <b>Before: </b>
+						<img id="lab12-b" src="img/lab12-before.png"/>
+					</div>
+					<div class="right-side">
+                        <b>After: </b>
+						<img id="lab12-a" src="img/lab12-after.png"/>	
+					</div>
+                    <p>In lab 12, I didn't check to make sure there was an input so if the input was left 
+                        blank the function would automatically output Griffindor. I fixed this by checking 
+                        to see if there is an input, and if there isn't, the function outputs a string telling the 
+                        user to input their name. 
+                    </p>
+            </div>
+        </section>
+        <nav id="links">
+            <a href="https://nicolevfk.github.io/art101/" target="_new"> << Back to Homepage</a>
+        </nav>
+</body>
+</html>

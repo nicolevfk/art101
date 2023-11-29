@@ -21,7 +21,19 @@ var resultB = b.map(function capitalize(n) {
     return result;
 });
 
+// LAB 14 DEBUGGING, function that orders things with spaces
+function spaced(list) {
+    for (item in list) {
+        if (item == 0) {
+            var str = list[item];
+        } else {
+            str = str + ", " + list[item];
+        }
+    }
+    return str
+}
+
 // print output in html
 var outputEl = document.getElementById("output"); 
-outputEl.innerHTML = "Array of numbers: " + a + "</br>Those numbers quartered: " + resultA +
-                    "</br></br>Array of names: " + b + "</br>Those names capitalized: " + resultB;
+outputEl.innerHTML = "Array of numbers: " + spaced(a) + "</br>Those numbers quartered: " + spaced(resultA) +
+                    "</br></br>Array of names: " + spaced(b) + "</br>Those names capitalized: " + spaced(resultB);

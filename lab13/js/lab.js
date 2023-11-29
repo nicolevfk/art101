@@ -16,10 +16,8 @@ function getFactors() {
             factors[numValue] = wordValue;
         }
     }
-    console.log(factors)
     return factors
 }
-
 
 function FizzBuzz(factors) {
     maxValue = document.getElementById("max").value;

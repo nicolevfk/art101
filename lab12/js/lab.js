@@ -24,8 +24,16 @@ function sortingHat(str) {
 
 $("#button").click(function() {
     const name = $("#input").val();
+    // check for input
+    if (name.length == 0) {
+        $("section").removeClass();
+        $("#results").addClass("minor-section");
+        $("#output").html("</br>Please enter your name to be sorted.");
+        return
+    }
+    // sort
     var house = sortingHat(name);
-    $("#results").removeClass()
+    $("#results").removeClass();
     $("#output").html("<h3>The sorting house has sorted you into " + house);
     if (house == "Griffindor") {
         $("#output").append("<p>A true Griffindor is Courageous, Chivalrous, and Daring.</p>");
